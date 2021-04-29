@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API de notre application de location de service entre particuliers ou professionnels nommée CactuService",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fontaine Quentin, Prud'Homme Gateau Sébastien",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.7"
+  }
+}
