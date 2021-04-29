@@ -9,13 +9,16 @@ exports.signup = (req, res, next) => {
             const user = new User({
                 lastname: req.body.lastname,
                 firstname: req.body.firstname,
-                birthday: req.body.birthday,
+                //birthday: req.body.birthday,
                 email: req.body.email.toLowerCase().trim(),
                 password: hash,
-                role: req.body.role,
+                //role: req.body.role,
+                gender: req.body.genre,
                 job: req.body.job
             });
+            console.log(user)
             user.save()
+
                 .then(() => res.status(201).json({ message: 'User created !'}))
                 .catch(error => res.status(400).json({ error }));
         })
