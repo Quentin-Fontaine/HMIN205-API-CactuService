@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 
 const userSchema = new mongoose.Schema({
+    gender: {
+        type: String,
+        enum: ['Femme', 'Homme', 'Autre'],
+        required: true
+    },
     lastname: { type: String, required: true },
     firstname: { type: String, required: true },
     birthday: { type: Date, required: true },
