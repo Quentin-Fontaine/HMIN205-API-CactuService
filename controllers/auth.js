@@ -16,6 +16,11 @@ exports.signup = (req, res, next) => {
                 role: req.body.role,
                 job: req.body.job
             });
+            console.log('\nDonnées de l\'utilisateur reçues de l\'application :\n');
+            console.log(req.body);
+            console.log('\nDonnées de l\'API envoyées au serveur : \n');
+            console.log(user);
+            
             user.save()
                 .then(() => res.status(201).json({ message: 'User created !'}))
                 .catch(error => res.status(400).json({ error }));
