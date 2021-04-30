@@ -17,6 +17,7 @@ exports.signup = (req, res, next) => {
                 job: req.body.job
             });
             console.log(req.body);
+            console.log(user);
             user.save()
                 .then(() => res.status(201).json({ message: 'User created !'}))
                 .catch(error => res.status(400).json({ error }));
