@@ -6,8 +6,8 @@ const userCtrl = require('../controllers/user');
 router.route('/')
     .get(userCtrl.getAllUsers);
 
-router.route('/:job')
-    .get(userCtrl.getUsersJob);
+// router.route('/:job')
+//     .get(userCtrl.getUsersJob);
 
 router.param('userId', userCtrl.getUserMiddleware);
 router.route('/:userId')

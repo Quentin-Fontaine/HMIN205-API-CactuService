@@ -10,6 +10,7 @@ router.route('/')
 router.param('slotId', slotCtrl.getSlotMiddleware);
 router.route('/:slotId')
     .get(slotCtrl.getSlot)
+    .put(slotCtrl.updateSlot)
     .delete(slotCtrl.deleteSlot);
 
 module.exports = router;

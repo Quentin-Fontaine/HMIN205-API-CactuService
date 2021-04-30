@@ -6,6 +6,12 @@ exports.getAllSlots = (req, res, next) => {
         .catch(error => res.status(500).json({ error }));
 };
 
+// exports.getNotBookedSlots = (req, res, next) => {
+//     Slot.find({ isBooked: req.query.isBooked })
+//         .then(slots => res.status(201).json(slots))
+//         .catch(error => res.status(500).json({ error }));
+// };
+
 exports.addSlot = (req, res, next) => {
     delete req.body._id;
     const slot = new Slot({
@@ -32,8 +38,14 @@ exports.getSlot = (req, res) => {
     return res.status(200).json(req.slot);
 };
 
+exports.updateSlot = (req, res) => {
+    Slot.updateOne({ _id: req.slot.id }, { ...req.body, _id: req.slot.id })
+        .then(() => res.status(200).json({ message: 'Slot modified !' }))
+        .catch(error => res.status(400).json({ error }));
+};
+
 exports.deleteSlot = (req, res) => {
-    Slot.deleteOne({ _id: req.body.slotId })
+    Slot.deleteOne({ _id: req.slot._id })
         .then(() => res.status(204).send())
         .catch(error => res.status(500).json({ error }));
 };
