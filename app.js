@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
+const slotRoutes = require('./routes/slot');
 
 mongoose.connect('mongodb://localhost:27017/cactuservice',
     { useNewUrlParser: true,
@@ -23,5 +24,6 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/slots', slotRoutes);
 
 module.exports = app;

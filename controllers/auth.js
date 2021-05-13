@@ -7,6 +7,7 @@ exports.signup = (req, res, next) => {
     bcrypt.hash(req.body.password, 10)
         .then(hash => {
             const user = new User({
+                gender: req.body.gender,
                 lastname: req.body.lastname,
                 firstname: req.body.firstname,
                 birthday: req.body.birthday,
@@ -16,8 +17,12 @@ exports.signup = (req, res, next) => {
                 gender: req.body.genre,
                 job: req.body.job
             });
+            
+            console.log('\nDonnées de l\'utilisateur reçues de l\'application :\n');
             console.log(req.body);
+            console.log('\nDonnées de l\'API envoyées au serveur : \n');
             console.log(user);
+            
             user.save()
                 .then(() => res.status(201).json({ message: 'User created !'}))
                 .catch(error => res.status(400).json({ error }));
