@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "608434f461fb2a34c861386e"
+  },
+  "lastname": "Fontaine",
+  "firstname": "Quentin",
+  "birthday": {
+    "$date": "1998-06-30T00:00:00Z"
+  },
+  "email": "quentin.font974@gmail.com",
+  "password": "$2b$10$D6/0pgNuR6pC7MUZHybl3uczCFKG/lAUz71QQ902Ux3HUzHuapnaC",
+  "role": "Administrateur",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608435af61fb2a34c861386f"
+  },
+  "lastname": "Anjanath",
+  "firstname": "Antoine",
+  "birthday": {
+    "$date": "2003-01-15T00:00:00Z"
+  },
+  "email": "aa@hotmail.fr",
+  "password": "$2b$10$fkZLYwWrUZvDLyqJpHwOZuGd4yuFyY8td292PpqGlJGDQgaSqFJTO",
+  "role": "Client",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608435fa61fb2a34c8613870"
+  },
+  "lastname": "Bishaten",
+  "firstname": "Bella",
+  "birthday": {
+    "$date": "1995-02-14T00:00:00Z"
+  },
+  "email": "bb@hotmail.fr",
+  "password": "$2b$10$R.mTzAZ7M.FTqZZhJh2PT.hIwJAkaCLRx8.l2lEoqFeQXzrM6AozK",
+  "role": "Fournisseur",
+  "job": {
+    "$oid": "60a29a666d88772084bf52e8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6084368361fb2a34c8613871"
+  },
+  "lastname": "Ceadeus",
+  "firstname": "Chloé",
+  "birthday": {
+    "$date": "2000-07-30T00:00:00Z"
+  },
+  "email": "cc@live.fr",
+  "password": "$2b$10$TjWtE/4iLN7l1FHzsCyMTemyf07sj4/HcmYxFzoSKb0llneCC7f.K",
+  "role": "Client",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608437dc61fb2a34c8613872"
+  },
+  "lastname": "Daren Mohran",
+  "firstname": "Daniel",
+  "birthday": {
+    "$date": {
+      "$numberLong": "-157766400000"
+    }
+  },
+  "email": "dd@gmail.com",
+  "password": "$2b$10$9FuUDwstoWngvGWv46c4d.aJTU9YOcP.SVlScCi0peohXT882wdo.",
+  "role": "Fournisseur",
+  "job": {
+    "$oid": "60a2956105ceec1410e7074e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60844c03d74e9c0d28f0a47f"
+  },
+  "lastname": "Epioth",
+  "firstname": "Elisabeth",
+  "birthday": {
+    "$date": "1998-04-13T00:00:00Z"
+  },
+  "email": "ee@live.fr",
+  "password": "$2b$10$Ihag5tE90CbD.1W7iABk5.ixNZiBevBqDr.3WgtLo/6pXEanzQWFq",
+  "role": "Fournisseur",
+  "job": {
+    "$oid": "60a2956105ceec1410e7074e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608452f53bf78d114c2a93c8"
+  },
+  "lastname": "Fatalis",
+  "firstname": "Fabien",
+  "birthday": {
+    "$date": "1974-06-25T00:00:00Z"
+  },
+  "email": "ff@live.fr",
+  "password": "$2b$10$vkN3DpVEUsh8f/.YasLQKe0ItK.ctKcJOa5.WbaaUtDGcO1Q3/pSO",
+  "role": "Client",
+  "__v": 0
+}]

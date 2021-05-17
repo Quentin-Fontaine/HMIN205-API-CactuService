@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const slotRoutes = require('./routes/slot');
+const jobRoutes = require('./routes/job');
 
 mongoose.connect('mongodb://localhost:27017/cactuservice',
     { useNewUrlParser: true,
@@ -25,5 +26,6 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/slots', slotRoutes);
+app.use('/api/jobs', jobRoutes);
 
 module.exports = app;

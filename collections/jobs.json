@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "60a2956105ceec1410e7074e"
+  },
+  "title": "Cuisinier",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29a526d88772084bf52e6"
+  },
+  "title": "Plombier",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29a5d6d88772084bf52e7"
+  },
+  "title": "Jardinier",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29a666d88772084bf52e8"
+  },
+  "title": "Coiffeur",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29a846d88772084bf52e9"
+  },
+  "title": "Professeur particulier",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29a926d88772084bf52ea"
+  },
+  "title": "Médecin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a29aa06d88772084bf52eb"
+  },
+  "title": "Babysitter",
+  "__v": 0
+}]
