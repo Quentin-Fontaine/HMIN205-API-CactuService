@@ -39,7 +39,7 @@ exports.getSlot = (req, res) => {
 };
 
 exports.updateSlot = (req, res) => {
-    Slot.updateOne({ _id: req.slot.id }, { ...req.body, _id: req.slot.id })
+    Slot.updateOne({ _id: req.slot._id }, { ...req.body, _id: req.slot._id })
         .then(() => res.status(200).json({ message: 'Slot modified !' }))
         .catch(error => res.status(400).json({ error }));
 };

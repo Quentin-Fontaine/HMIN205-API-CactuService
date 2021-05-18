@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "608c1cab5f7e561920ce288b"
+  },
+  "startTime": {
+    "$date": "2021-04-29T15:00:00Z"
+  },
+  "endingTime": {
+    "$date": "2021-04-29T17:00:00Z"
+  },
+  "isBooked": true,
+  "idSupplier": {
+    "$oid": "608435fa61fb2a34c8613870"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608c35517ec1b4216c377e94"
+  },
+  "startTime": {
+    "$date": "2021-04-30T18:00:00Z"
+  },
+  "endingTime": {
+    "$date": "2021-04-30T20:00:00Z"
+  },
+  "isBooked": false,
+  "idSupplier": {
+    "$oid": "60844c03d74e9c0d28f0a47f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a2a7cfaf385f09347f39c2"
+  },
+  "startTime": {
+    "$date": "2021-05-17T14:00:00Z"
+  },
+  "endingTime": {
+    "$date": "2021-05-17T17:30:00Z"
+  },
+  "isBooked": false,
+  "idSupplier": {
+    "$oid": "60844c03d74e9c0d28f0a47f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a2b37a7e03ab31305a67d1"
+  },
+  "startTime": {
+    "$date": "2021-05-17T12:00:00Z"
+  },
+  "endingTime": {
+    "$date": "2021-05-17T14:00:00Z"
+  },
+  "isBooked": true,
+  "idSupplier": {
+    "$oid": "60844c03d74e9c0d28f0a47f"
+  },
+  "__v": 0
+}]

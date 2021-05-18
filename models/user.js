@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
         enum: ['Client', 'Fournisseur', 'Administrateur'],
         required: true
     },
-    job: { type: String, required: false }
+    job: { type: mongoose.Types.ObjectId, required: false }
 });
 
 userSchema.plugin(uniqueValidator);
