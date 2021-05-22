@@ -18,4 +18,7 @@ router.route('/:userId')
 router.route('/:userId/unbookedslots')
     .get(userCtrl.getAvailableSlotsOfUser);
 
+router.route('/:userId/bookings')
+    .get(userCtrl.getBookingsOfUser);
+
 module.exports = router;
