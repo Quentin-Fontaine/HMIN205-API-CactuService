@@ -56,3 +56,9 @@ exports.getAvailableSlotsOfUser = (req, res) => {
         .then(slots => res.status(201).json(slots))
         .catch(error => res.status(500).json({ error }));
 };
+
+exports.getBookingsOfUser = (req, res) => {
+    Slot.find({ idBooker: req.user._id, isBooked: true })
+        .then(slots => res.status(201).json(slots))
+        .catch(error => res.status(500).json({ error }));
+};
